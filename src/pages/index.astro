@@ -1,5 +1,16 @@
 ---
+import HeroPicture from '@assets/home/home-hero-001.jpg'
 import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout />
+<Layout>
+  <section class='flex items-center justify-center'>
+    <div class='relative w-full'>
+      <div>
+        <picture class='block w-full h-screen max-h-screen overflow-hidden'>
+          <img src={HeroPicture.src} alt='' class='w-full h-full object-cover object-center' />
+        </picture>
+      </div>
+    </div>
+  </section>
+</Layout>
